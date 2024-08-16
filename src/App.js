@@ -50,6 +50,56 @@ function App() {
             </tbody>
         </table>
       </header>
+            <!DOCTYPE html>
+            <html lang= "es">
+            <head>
+             <meta charset="UTF-8">
+             <meta name="viewport"
+            content="width=device-width, 
+            initial-scale=1.0">
+                <title>Palìndromo Checker</
+            title>
+               <script>
+                function 
+            esPalindromo(palabra){
+              //Eliminar espacios y 
+            convertir a minùsculas 
+               palabra = palabra.replace(/
+            \s+/g,").tolowerCase();  
+              //Comparar la palabra con su
+            reverso 
+                return palabra ===
+            palabra.split(").reverse().join("); 
+              }
+
+              function
+            verificarPalindromo(event){
+                const texto = 
+            document.getElementByld('texto
+            ').value; 
+                 if(esPalindromo(texto)){
+                   alert("Es palìndromo");
+                 }
+              }
+             </script>
+            </head>
+            <body>
+               <h1>Verificador de 
+            Palìndromos</h1>
+             <input type="text" id="texto"
+            placeholder="Ingresa una 
+            palabra"
+            onkeyup="verificarPalindromo(ev
+            ent)">
+            </body>
+            </html>
+  
+   
+                                                 
+                
+                 
+            }
+      
     </div>
   );
 }
