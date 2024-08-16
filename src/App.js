@@ -2,6 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function esPalindromo(palabra) {
+  //Eliminar espacios y convertir a minùsculas
+  palabra = palabra.toLowerCase();
+  //Comparar la palabra con su reverso
+  return palabra === palabra.split("").reverse().join("");
+}
+function verificarPalindromo() {
+  const texto = document.getElementById('texto').value; 
+  if (esPalindromo(texto)) {
+    alert("Es palìndromo");
+  } else {
+    alert("No es palìndromo");
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -20,34 +35,34 @@ function App() {
           Learn React
         </a>
         <table>
-        <thead>
-                <tr>
-                    <th>Nombres</th>
-                    <th>Apellidos</th>
-                    <th>Correo</th>
-                    <th>Celular</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jimena</td>
-                    <td>Hurtado</td>
-                    <td>hurtadoreyesjimena81@gmail.com</td>
-                    <td>1234567890</td>
-                </tr>
-                <tr>
-                    <td>María</td>
-                    <td>Hurtado</td>
-                    <td>maria.huratdo@gmail.com</td>
-                    <td>2345678901</td>
-                </tr>
-                <tr>
-                    <td>Samuel</td>
-                    <td>Andrade</td>
-                    <td>andradesamuel@gmail.com</td>
-                    <td>3456789012</td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Correo</th>
+              <th>Celular</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jimena</td>
+              <td>Hurtado</td>
+              <td>hurtadoreyesjimena81@gmail.com</td>
+              <td>1234567890</td>
+            </tr>
+            <tr>
+              <td>María</td>
+              <td>Hurtado</td>
+              <td>maria.huratdo@gmail.com</td>
+              <td>2345678901</td>
+            </tr>
+            <tr>
+              <td>Samuel</td>
+              <td>Andrade</td>
+              <td>andradesamuel@gmail.com</td>
+              <td>3456789012</td>
+            </tr>
+          </tbody>
         </table>
       </header>
 
@@ -57,62 +72,25 @@ function App() {
       <p class="parrafo"> R//Webpack es una herramienta de construcción y empaquetado para aplicaciones web modernas. Su objetivo principal es tomar varios archivos y recursos de un proyecto (como JavaScript, CSS, imágenes, y otros activos) y combinarlos en un número menor de archivos de salida, usualmente llamados "bundles", que pueden ser cargados más eficientemente por el navegador.</p>
       <p class="title"> ¿Para qué se usa en React?</p>
       <p class="parrafo"> R// En el contexto de React, Babel se utiliza para:
-         1.Transformar JSX: JSX es una extensión de la sintaxis de JavaScript que permite escribir HTML en el mismo archivo que JavaScript. Babel convierte el código JSX en llamadas a React.createElement, lo cual es necesario para que el código funcione en el navegador. 
-         2.Convertir características modernas de JavaScript: Babel permite usar características modernas del lenguaje, como las clases, módulos, y funciones de flecha, y las convierte en una sintaxis más antigua y ampliamente soportada. 
-         3.Uso de plugins y presets: Babel se configura mediante plugins y presets, como @babel/preset-react para JSX y @babel/preset-env para características modernas de JavaScript.</p>
+        1.Transformar JSX: JSX es una extensión de la sintaxis de JavaScript que permite escribir HTML en el mismo archivo que JavaScript. Babel convierte el código JSX en llamadas a React.createElement, lo cual es necesario para que el código funcione en el navegador.
+        2.Convertir características modernas de JavaScript: Babel permite usar características modernas del lenguaje, como las clases, módulos, y funciones de flecha, y las convierte en una sintaxis más antigua y ampliamente soportada.
+        3.Uso de plugins y presets: Babel se configura mediante plugins y presets, como @babel/preset-react para JSX y @babel/preset-env para características modernas de JavaScript.</p>
 
-            <!DOCTYPE html>
-            <html lang= "es">
-            <head>
-             <meta charset="UTF-8">
-             <meta name="viewport"
-            content="width=device-width, 
-            initial-scale=1.0">
-                <title>Palìndromo Checker</
-            title>
-               <script>
-                function 
-            esPalindromo(palabra){
-              //Eliminar espacios y 
-            convertir a minùsculas 
-               palabra = palabra.replace(/
-            \s+/g,").tolowerCase();  
-              //Comparar la palabra con su
-            reverso 
-                return palabra ===
-            palabra.split(").reverse().join("); 
-              }
+      <body>
+        <h1>Verificador de Palìndromos</h1>
+        <input
+          type="text"
+          id="texto"
+          placeholder="Ingresa una palabra"
+          />
+        <button
+          onClick={verificarPalindromo}>
+          click aqui!
+          </button>
+      </body>
 
-              function
-            verificarPalindromo(event){
-                const texto = 
-            document.getElementByld('texto
-            ').value; 
-                 if(esPalindromo(texto)){
-                   alert("Es palìndromo");
-                 }
-              }
-             </script>
-            </head>
-            <body>
-               <h1>Verificador de 
-            Palìndromos</h1>
-             <input type="text" id="texto"
-            placeholder="Ingresa una 
-            palabra"
-            onkeyup="verificarPalindromo(ev
-            ent)">
-            </body>
-            </html>
-  
-   
-                                                 
-                
-                 
-            }
-      
->>>>>>> 043700550094cd2376cd7922cc6e5f8b043b02ea
-    </div>
+
+    </div >
   );
 }
 
