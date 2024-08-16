@@ -50,6 +50,7 @@ function App() {
             </tbody>
         </table>
       </header>
+
       <p class="title">¿Qué es Babel?</p>
       <p class="Parrafo">  R//Babel es un transpilador de JavaScript. Su función principal es convertir el código JavaScript moderno (ES6/ES7/ES8 y versiones más nuevas) en una versión más compatible con navegadores antiguos, de modo que el código pueda ejecutarse en una mayor variedad de entornos.</p>
       <p class="title"> ¿Que es Webpack?</p>
@@ -59,6 +60,58 @@ function App() {
          1.Transformar JSX: JSX es una extensión de la sintaxis de JavaScript que permite escribir HTML en el mismo archivo que JavaScript. Babel convierte el código JSX en llamadas a React.createElement, lo cual es necesario para que el código funcione en el navegador. 
          2.Convertir características modernas de JavaScript: Babel permite usar características modernas del lenguaje, como las clases, módulos, y funciones de flecha, y las convierte en una sintaxis más antigua y ampliamente soportada. 
          3.Uso de plugins y presets: Babel se configura mediante plugins y presets, como @babel/preset-react para JSX y @babel/preset-env para características modernas de JavaScript.</p>
+
+            <!DOCTYPE html>
+            <html lang= "es">
+            <head>
+             <meta charset="UTF-8">
+             <meta name="viewport"
+            content="width=device-width, 
+            initial-scale=1.0">
+                <title>Palìndromo Checker</
+            title>
+               <script>
+                function 
+            esPalindromo(palabra){
+              //Eliminar espacios y 
+            convertir a minùsculas 
+               palabra = palabra.replace(/
+            \s+/g,").tolowerCase();  
+              //Comparar la palabra con su
+            reverso 
+                return palabra ===
+            palabra.split(").reverse().join("); 
+              }
+
+              function
+            verificarPalindromo(event){
+                const texto = 
+            document.getElementByld('texto
+            ').value; 
+                 if(esPalindromo(texto)){
+                   alert("Es palìndromo");
+                 }
+              }
+             </script>
+            </head>
+            <body>
+               <h1>Verificador de 
+            Palìndromos</h1>
+             <input type="text" id="texto"
+            placeholder="Ingresa una 
+            palabra"
+            onkeyup="verificarPalindromo(ev
+            ent)">
+            </body>
+            </html>
+  
+   
+                                                 
+                
+                 
+            }
+      
+>>>>>>> 043700550094cd2376cd7922cc6e5f8b043b02ea
     </div>
   );
 }
