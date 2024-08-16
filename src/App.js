@@ -50,6 +50,15 @@ function App() {
             </tbody>
         </table>
       </header>
+      <p class="title">¿Qué es Babel?</p>
+      <p class="Parrafo">  R//Babel es un transpilador de JavaScript. Su función principal es convertir el código JavaScript moderno (ES6/ES7/ES8 y versiones más nuevas) en una versión más compatible con navegadores antiguos, de modo que el código pueda ejecutarse en una mayor variedad de entornos.</p>
+      <p class="title"> ¿Que es Webpack?</p>
+      <p class="parrafo"> R//Webpack es una herramienta de construcción y empaquetado para aplicaciones web modernas. Su objetivo principal es tomar varios archivos y recursos de un proyecto (como JavaScript, CSS, imágenes, y otros activos) y combinarlos en un número menor de archivos de salida, usualmente llamados "bundles", que pueden ser cargados más eficientemente por el navegador.</p>
+      <p class="title"> ¿Para qué se usa en React?</p>
+      <p class="parrafo"> R// En el contexto de React, Babel se utiliza para:
+         1.Transformar JSX: JSX es una extensión de la sintaxis de JavaScript que permite escribir HTML en el mismo archivo que JavaScript. Babel convierte el código JSX en llamadas a React.createElement, lo cual es necesario para que el código funcione en el navegador. 
+         2.Convertir características modernas de JavaScript: Babel permite usar características modernas del lenguaje, como las clases, módulos, y funciones de flecha, y las convierte en una sintaxis más antigua y ampliamente soportada. 
+         3.Uso de plugins y presets: Babel se configura mediante plugins y presets, como @babel/preset-react para JSX y @babel/preset-env para características modernas de JavaScript.</p>
     </div>
   );
 }
